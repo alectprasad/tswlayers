@@ -478,14 +478,14 @@ const DLCNetworkVisualization = () => {
               </div>
               
               <div className="mb-4">
-                <h3 className="text-lg font-semibold mb-2">Required DLCs</h3>
+                <h3 className="text-lg font-semibold mb-2">Required DLCs For Additional Playable Trains</h3>
                 {routeToDLC[selectedNode.id] && routeToDLC[selectedNode.id].length > 0 ? (
                   <div className={`overflow-x-auto ${darkMode ? 'bg-gray-700' : 'bg-gray-50'} rounded-md`}>
                     <table className="min-w-full divide-y divide-gray-500">
                       <thead className={darkMode ? 'bg-gray-800' : 'bg-gray-100'}>
                         <tr>
                           <th className="px-3 py-2 text-left text-sm font-medium">Locomotive</th>
-                          <th className="px-3 py-2 text-left text-sm font-medium">Required DLCs</th>
+                          <th className="px-3 py-2 text-left text-sm font-medium">Included in</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-gray-300">
