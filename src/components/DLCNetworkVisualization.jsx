@@ -26,6 +26,7 @@ const DLCNetworkVisualization = () => {
     'FR': '#59a14f',
     'CH': '#edc949',
     'AT': '#af7aa1',
+    'NL': '#e45756',
     'Unknown': '#9d9d9d'
   }), []);
   
@@ -500,7 +501,7 @@ const DLCNetworkVisualization = () => {
                                     className={`inline-block px-2 py-1 rounded-md text-xs ${selectedNodeConnections.includes(dlc.shortName.trim()) ? 'font-bold' : ''}`}
                                     style={{
                                       backgroundColor: regionColors[dlc.region] || '#ccc',
-                                      color: ['US', 'UK', 'CA', 'FR', 'CH'].includes(dlc.region) ? 'black' : 'white',
+                                      color: ['US', 'UK', 'CA', 'FR', 'CH', 'NL'].includes(dlc.region) ? 'black' : 'white',
                                       border: selectedNodeConnections.includes(dlc.shortName.trim()) 
                                         ? '2px solid #ff0' 
                                         : 'none'
