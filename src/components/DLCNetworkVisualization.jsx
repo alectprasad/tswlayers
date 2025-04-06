@@ -45,16 +45,17 @@ const DLCNetworkVisualization = () => {
     const loadData = async () => {
       try {
         setLoading(true);
-        
+        const baseUrl = import.meta.env.BASE_URL || '/';
+
         // Load route lookup data
-        const routeLookupResponse = await fetch('/route_lookup.csv').then(response => response.text());
+        const routeLookupResponse = await fetch(`${baseUrl}route_lookup.csv`).then(response => response.text());
         const routeLookupData = Papa.parse(routeLookupResponse, {
           header: true,
           skipEmptyLines: true
         }).data;
         
         // Load DLC network data
-        const dlcNetworkResponse = await fetch('/dlc_network.csv').then(response => response.text());
+        const dlcNetworkResponse = await fetch(`${baseUrl}dlc_network.csv`).then(response => response.text());
         const dlcNetworkData = Papa.parse(dlcNetworkResponse, {
           header: true,
           skipEmptyLines: true
