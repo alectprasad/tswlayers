@@ -19,15 +19,15 @@ const DLCNetworkVisualization = () => {
   
   // Color scale for regions, memoized to prevent recreation on every render
   const regionColors = useMemo(() => ({
-    'US': '#4e79a7',
-    'UK': '#f28e2c',
-    'DE': '#e15759',
-    'CA': '#76b7b2',
-    'FR': '#59a14f',
-    'CH': '#edc949',
-    'AT': '#af7aa1',
-    'NL': '#e45756',
-    'Unknown': '#9d9d9d'
+    'US': '#2563eb',
+    'UK': '#059669',
+    'DE': '#d97706',
+    'CA': '#7c3aed',
+    'FR': '#db2777',
+    'CH': '#facc15',
+    'AT': '#0891b2',
+    'NL': '#ef4444',
+    'Unknown': '#6b7280'
   }), []);
   
   // Check if mobile view
@@ -545,7 +545,7 @@ const DLCNetworkVisualization = () => {
       
       {/* Footer */}
       <footer className={`p-3 text-center text-sm ${darkMode ? 'bg-gray-800 text-gray-400' : 'bg-gray-100 text-gray-600'}`}>
-        <p>Click on nodes to see details | updated March 2025</p>
+        <p>Click on nodes to see details | updated April 2025</p>
       </footer>
     </div>
   );
