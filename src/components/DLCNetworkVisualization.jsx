@@ -546,7 +546,7 @@ const DLCNetworkVisualization = () => {
       
       {/* Footer */}
       <footer className={`p-3 text-center text-sm ${darkMode ? 'bg-gray-800 text-gray-400' : 'bg-gray-100 text-gray-600'}`}>
-        <p>Click on nodes to see details | updated April 2025</p>
+        <p>Click on nodes to see details | updated May 2025</p>
       </footer>
     </div>
   );
